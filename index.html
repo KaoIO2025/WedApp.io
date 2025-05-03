@@ -105,16 +105,19 @@
       --t: 0.3s;
       color: rgb(0, 255, 0); /* สีเขียวตอน hover */
     }
+    .center{
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo"></div>
     <nav>
-      <a href="#">หน้าแรก</a>
-      <a href="#">แจ้งเตือน</a>
-      <a href="#">Updeat</a>
-      <button class="toggle-mode" onclick="toggleMode()">🌙 / ☀️</button>
+       <a href="#"><i class="fas fa-home"></i>หน้าหลัก</a>
+      <a href="#"><i class="fas fa-bell"></i>แจ้งเตือน</a>
+      <a href="#"><i class="fas fa-sync-alt"></i>Update</a>
+
     </nav>
   </header>
 
@@ -131,7 +134,8 @@
       <a href="#" class="btn liquid"><span>Liquid 6</span></a>
     </div>
   </main>
-
+<p style="text-align: center;">© 2020 All rights reservedPrivacy Notice</p>
+  </div>
   <script>
     function toggleMode() {
       document.body.classList.toggle('dark');
